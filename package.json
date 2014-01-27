@@ -1,9 +1,17 @@
 {
-  "name": "http2",
-  "title": "http2",
-  "id": "jid1-3KSe2CI1fu9LMw",
-  "description": "a basic add-on",
-  "author": "",
-  "license": "MPL 2.0",
-  "version": "0.1"
+    "license": "GPL 2.0",
+    "description": "Protect yourself against fake websites! Fake Domain helps make sure the site you are on is where you really want to be.\n",
+    "contributors": ["sayadi.hz@gmail.com"],
+    "author": "nemlaghi.bechir@gmail.com",
+    "url": "https://fakedomains.accessnow.org/",
+    "dependencies": ["api-utils", "addon-kit"],
+    "version": "1.2",
+    "lib": "lib",
+    "fullName": "Fake Domain",
+    "main": "main",
+    "id": "jid0-RC7UmNN5T3bzcD6KftfnEckAFR8",
+    "name": "fake-domain",
+    "permissions": {
+        "private-browsing": true
+    }
 }
