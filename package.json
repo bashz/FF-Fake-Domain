@@ -13,5 +13,15 @@
     "name": "fake-domain",
     "permissions": {
         "private-browsing": true
-    }
+    },
+    "preferences": 
+    [
+        {
+            "name": "saveAnswer",
+            "title": "Remeber my choices",
+            "description": "Enable or disable add-on auto saving your choices relatives to the fake domains.",
+            "type": "bool",
+            "value": false
+        }
+    ]
 }
