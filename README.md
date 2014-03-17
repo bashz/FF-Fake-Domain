@@ -1,5 +1,5 @@
-Fake Domain
-===========
+FireFox Fake Domain addon
+=========================
 
 	Protect yourself against fake websites! Fake Domain Detective helps make sure the site you are on is where you really want to be.
 
@@ -15,9 +15,15 @@ Description
 Installation
 ============
 
-        Production Latest version can be found at : https://addons.mozilla.org/en-US/firefox/addon/fake-domain/
-        For local testing version please install the addon from the file *fake-domain.xpi* : https://github.com/bashz/FF-Fake-Domain/blob/master/fake-domain.xpi
-        For Dev installation please download the source and refer to the cfx tool by mozilla : https://developer.mozilla.org/en-US/Add-ons/SDK/Tools/cfx
+        ####Production Latest version:
+        https://addons.mozilla.org/en-US/firefox/addon/fake-domain/
+        ####Local testing version:
+        Please install the addon from the file *fake-domain.xpi* : https://github.com/bashz/FF-Fake-Domain/blob/master/fake-domain.xpi
+        ####Dev installation
+        Please download the source and refer to the cfx tool by mozilla : https://developer.mozilla.org/en-US/Add-ons/SDK/Tools/cfx
+        Copy config/config.json.sample to config/config.json
+        Edit the new file to add the url from where the data are served on JSON format.
+        Contact bechir@accessnow.org for further information if needed.
 
 Additional Resources
 ====================

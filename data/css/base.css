@@ -14,6 +14,12 @@ body {
     background : #231f20;
     color : #caefab;
 }
+a {
+    color: #268a16;
+}
+p {
+    text-align: justify;
+}
 ul{
     list-style-type : none;
     padding : 0;
@@ -64,4 +70,35 @@ li a:hover {
 li a:active {
     position:relative;
     top:1px;
+}
+form{
+    text-align: center;
+}
+input{
+    margin: 0 2px;
+    padding: 0 2px;
+}
+table{
+    width: 82%;
+    border: none;
+    margin: auto;
+}
+tr{
+    line-height: 20px;
+    font-size: 20px;
+    vertical-align: middle;
+    width: 20%;
+}
+.tr0{
+    background-color: #333333;
+}
+.tr1{
+    background-color: #111111;
+}
+tr:hover{
+    background-color: #193019;
+}
+td{
+    text-align: left;
+    padding: 2px 16px 2px 4px;
 }

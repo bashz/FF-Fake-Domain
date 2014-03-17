@@ -1,10 +1,16 @@
-var prefs = document.getElementById("prefs");
+var table = document.getElementById("table");
 self.port.on("buildForm", function(discovered) {
     for (var i = 0; i < discovered.length; i++) {
-        prefs.appendChild(document.createTextNode(discovered[i].name));
+        var tr = document.createElement("tr");
+        var tdDomain = document.createElement("td");
+        var tdAllowed = document.createElement("td");
+        var tdForbiden = document.createElement("td");
+        var tdNoRule = document.createElement("td");
         var allowedRadio = document.createElement("input");
         var forbidenRadio = document.createElement("input");
         var noRuleRadio = document.createElement("input");
+        tr.class = "tr" + (i % 2);
+        tdDomain.class = "domain";
         allowedRadio.type = "radio";
         forbidenRadio.type = "radio";
         noRuleRadio.type = "radio";
@@ -26,13 +32,18 @@ self.port.on("buildForm", function(discovered) {
         allowedRadio.name = discovered[i].name;
         forbidenRadio.name = discovered[i].name;
         noRuleRadio.name = discovered[i].name;
-        prefs.appendChild(allowedRadio);
-        prefs.appendChild(document.createTextNode("Allowed"));
-        prefs.appendChild(forbidenRadio);
-        prefs.appendChild(document.createTextNode("Forbiden"));
-        prefs.appendChild(noRuleRadio);
-        prefs.appendChild(document.createTextNode("No Rule"));
-        prefs.appendChild(document.createElement("br"));
+        tdDomain.appendChild(document.createTextNode(discovered[i].name));
+        tdAllowed.appendChild(allowedRadio);
+        tdAllowed.appendChild(document.createTextNode("Allowed"));
+        tdForbiden.appendChild(forbidenRadio);
+        tdForbiden.appendChild(document.createTextNode("Forbiden"));
+        tdNoRule.appendChild(noRuleRadio);
+        tdNoRule.appendChild(document.createTextNode("No Rule"));
+        tr.appendChild(tdDomain);
+        tr.appendChild(tdAllowed);
+        tr.appendChild(tdForbiden);
+        tr.appendChild(tdNoRule);
+        table.appendChild(tr);
     }
     document.onchange = function() {
         var values = [];
