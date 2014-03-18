@@ -17,7 +17,7 @@ body {
 a {
     color: #268a16;
 }
-p {
+p , span{
     text-align: justify;
 }
 ul{
