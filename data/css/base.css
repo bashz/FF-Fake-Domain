@@ -79,15 +79,16 @@ input{
     padding: 0 2px;
 }
 table{
-    width: 82%;
+    padding-top: 30px;
+    width: 100%;
     border: none;
     margin: auto;
 }
 tr{
     line-height: 20px;
-    font-size: 20px;
+    font-size: 16px;
     vertical-align: middle;
-    width: 20%;
+    border-collapse: collapse;
 }
 .tr0{
     background-color: #333333;
